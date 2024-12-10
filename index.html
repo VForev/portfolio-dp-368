@@ -13,23 +13,41 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 </head>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const hamburger = document.getElementById('hamburger-menu');
+      const navMenu = document.querySelector('#navbar ul');
+  
+      hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+      });
+    });
+  </script>
+
 <body>
+
   <!-- Navbar -->
   <nav id="navbar">
-    <h1>Dillon Pikulik</h1>
-    <ul>
-      <li><a href="#welcome-section">About</a></li>
-      <li><a href="#myname">What I Do</a></li>
-      <li><a href="#reflections">Contact</a></li>
-      <li><a href="/pAr.html">Projects and Review</a></li>
-    </ul>
-  </nav>
+  <h1>Dillon Pikulik</h1>
+  <button id="hamburger-menu" aria-label="Toggle navigation">
+    &#9776; <!-- Hamburger Icon -->
+  </button>
+  <ul>
+    <li><a href="#welcome-section">About</a></li>
+    <li><a href="#myname">What I Do</a></li>
+    <li><a href="#reflections">Contact</a></li>
+    <li><a href="/pAr.html">Projects and Review</a></li>
+  </ul>
+</nav>
+
+  
 
   <!-- Welcome Section -->
   <header id="welcome-section">
     <h1>OPEN YOURSELF</h1>
     <p>There is so much awaiting YOU!</p>
-    <button>Contact Me Today</button>
+    <a href="#reflections"><button>Contact Me Today</button></a>
   </header>
 
   <section id="myname">

@@ -27,25 +27,30 @@
     background: var(--primary-color);
     color: var(--text-color);
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     z-index: 1000;
 
   }
   
-  #navbar ul {
-    justify-content: right;
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-    margin: auto;  
-    margin-right: 1.5rem;
-    padding: 1rem;
-    text-align: right;
-  }
-
- #navbar h1 {
+  #navbar h1 {
     font-size: large;
-    margin-left: 2rem;
+    margin-left: 1rem;
     color: var(--accent-color);
+  }
+  
+  #navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    padding: 1rem;
+
+  }
+  
+  #navbar ul li {
+    text-align: right;
   }
   
   #navbar a {
@@ -56,6 +61,28 @@
   
   #navbar a:hover {
     color: var(--accent-color);
+  }
+
+  #navbar button {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s;
+  }
+
+  #navbar button:hover {
+    color: var(--accent-color);
+  }
+  
+  /* Hamburger Menu Button */
+  #hamburger-menu {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    justify-content: flex-end;
+    align-items: center;
   }
   
   /* Welcome Section */
@@ -390,21 +417,33 @@
   
   /* Media Query */
   @media (max-width: 768px) {
+    #hamburger-menu {
+      display: block; /* Show hamburger menu */
+      padding-right: 1rem;
 
 
-    #navbar {
-        background: #1d355795;
     }
-
-    #navbar h1 {
-        font-size: 2rem;
-
-      }
-
+  
     #navbar ul {
+      display: none; /* Hide menu initially */
       flex-direction: column;
+      background: #1d355795;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+      padding: 1rem 1rem;
       gap: 1rem;
     }
+  
+    #navbar ul.show {
+      display: flex; /* Show menu when active */
+    }
+  
+    #navbar h1 {
+      font-size: 1.5rem;
+    }
+  
   
     #welcome-section h1 {
       font-size: 2rem;
