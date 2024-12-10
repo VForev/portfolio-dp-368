@@ -15,6 +15,11 @@
 </head>
 
 <script>
+
+    $(document).ready(function(){
+        $(this).scrollTop(0);
+    });
+
     document.addEventListener('DOMContentLoaded', () => {
       const hamburger = document.getElementById('hamburger-menu');
       const navMenu = document.querySelector('#navbar ul');
@@ -23,6 +28,7 @@
         navMenu.classList.toggle('show');
       });
     });
+    
   </script>
 
 <body>
@@ -50,6 +56,8 @@
     <a href="#reflections"><button>Contact Me Today</button></a>
   </header>
 
+
+  
   <section id="myname">
         <h2>Hi, my name is <span>Dillon Pikulik</span>, and this is what I do...</h2>
     
