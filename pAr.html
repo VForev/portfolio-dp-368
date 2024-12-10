@@ -13,14 +13,31 @@
 <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 </head>
+
+<script>
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      const hamburger = document.getElementById('hamburger-menu');
+      const navMenu = document.querySelector('#navbar ul');
+  
+      hamburger.addEventListener('click', () => {
+        navMenu.classList.toggle('show');
+      });
+    });
+    
+  </script>
+
 <body>
 
     <nav id="navbar">
-        <h1>Dillon Pikulik</h1>
-        <ul>
-          <li><a href="/index.html">Back to Home</a></li>
-        </ul>
-      </nav>
+        <a href="#welcome-section"><h1>Dillon Pikulik</h1></a>
+      <button id="hamburger-menu" aria-label="Toggle navigation">
+        &#9776; <!-- Hamburger Icon -->
+      </button>
+      <ul>
+        <li><a href="/index.html">Back</a></li>
+      </ul>
+    </nav>
 
     <!-- Projects Section -->
   <section id="projects">
@@ -33,6 +50,31 @@
         <img src="project2.jpg" alt="Project 2">
         <p>Travels & Community</p>
       </div>
+      <div class="project-tile">
+        <img src="project1.jpg" alt="Project 1">
+        <p>Friends</p>
+      </div>
+      <div class="project-tile">
+        <img src="project2.jpg" alt="Project 2">
+        <p>Travels & Community</p>
+      </div>
+      <div class="project-tile">
+        <img src="project1.jpg" alt="Project 1">
+        <p>Friends</p>
+      </div>
+      <div class="project-tile">
+        <img src="project2.jpg" alt="Project 2">
+        <p>Travels & Community</p>
+      </div>
+      <div class="project-tile">
+        <img src="project1.jpg" alt="Project 1">
+        <p>Friends</p>
+      </div>
+      <div class="project-tile">
+        <img src="project2.jpg" alt="Project 2">
+        <p>Travels & Community</p>
+      </div>
+      
     </div>
   </section>
 
