@@ -127,7 +127,7 @@
   }
 
   #myname {
-    background: url('img/myname.JPG') no-repeat center center/cover;
+    background: url('img/myname.jpg') no-repeat center center/cover;
     height: 30vh;
     display: flex;
     flex-direction: column;
@@ -150,7 +150,7 @@
   /* Reflection Section */
   #joinus {
     padding: 2rem;
-    background: url('img/contact.JPG') no-repeat center center/cover;
+    background: url('img/contact.jpg') no-repeat center center/cover;
     text-align: center;
   }
 
@@ -480,6 +480,10 @@
     
       }
 
+    #navbar {
+        max-height: 65px;
+      }
+
     
 
       .clickable {
@@ -503,7 +507,7 @@
 
   #contact {
     padding: 2rem;
-    background: url('img/contact.JPG') no-repeat center center/cover;
+    background: url('img/contact.jpg') no-repeat center center/cover;
     text-align: center;
     color: var(--text-color);
   }
@@ -585,8 +589,6 @@
   #contact a:visited {
     color: var(--secondary-color)
   }
-
-  
 
   #contact a:active {
     color: red;
