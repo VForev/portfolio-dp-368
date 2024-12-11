@@ -194,6 +194,16 @@
     
   }
 
+  .clickable {
+    text-align: center;
+    color: var(--text-color);
+    font-weight: 270;
+    font-size: 2rem;
+    padding-top: 5.5rem;
+    margin: 1rem;
+
+  }
+
   #image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -418,6 +428,11 @@
     .text-container {
       font-size: 1.2rem; /* Smaller font for small screens */
     }
+
+    #image-grid span {
+      font-size: .8rem;
+      font-weight: 280;
+    }
   }
 
   /* ------- */
@@ -464,6 +479,23 @@
         font-size: 1.1rem;
     
       }
+
+    
+
+      .clickable {
+        font-size: 1.2rem;
+
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    
+      }
+
+      [class^="image-container"]::after {
+        font-size: .7rem;
+        text-align: center;
+        margin: 0;
+      }
+      
   }
   
 
