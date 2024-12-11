@@ -499,6 +499,16 @@
         text-align: center;
         margin: 0;
       }
+
+      #myname h2 {
+        font-size: .8rem;
+        padding: 1rem;
+        filter: drop-shadow(4px 4px 4px rgb(31, 31, 31));
+      }
+
+      #myname {
+        max-height: 7rem;
+      }
       
   }
   
