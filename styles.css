@@ -145,63 +145,34 @@
     text-decoration: underline;
   }
   
-  /* Projects Section */
-  #projects {
-    padding: 2rem;
-    background: black;
-    text-align: center;
-  }
-  
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1rem;
-  }
-  
-  .project-tile {
-    background: #fff;
-    color: #000;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
-  .project-tile img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .project-tile p {
-    margin: 1rem 0;
-    font-weight: bold;
-  }
   
   /* Reflection Section */
-  #reflections {
+  #joinus {
     padding: 2rem;
     background: url('img/contact.JPG') no-repeat center center/cover;
     text-align: center;
   }
 
-  #reflections h2 {
+  #joinus h2 {
     font-size: 3rem;
     margin: 0;
     padding: 0;
   }
 
-    #reflections p {
+    #joinus p {
         font-size: 2rem;
         font-weight: 300;
         margin: .5rem;
     }
   
-  #reflections a {
+  #joinus a {
     color: var(--accent-color);
     text-decoration: none;
     font-weight: bold;
     font-size: 1.5rem;
   }
   
-  #reflections a:hover {
+  #joinus a:hover {
     color: #ffd166;
   }
   
@@ -460,3 +431,82 @@
       }
   }
   
+
+  /* pAr so css */
+
+  #contact {
+    padding: 2rem;
+    background: url('img/contact.JPG') no-repeat center center/cover;
+    text-align: center;
+    color: var(--text-color);
+  }
+
+  #contact a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+/* Projects Section */
+#projects {
+    padding: 2rem;
+    background: var(--secondary-color);
+    text-align: center;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+  
+  .project-tile {
+    background: #fff;
+    color: #000;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .project-tile img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project-tile p {
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+
+  #projects h2 {
+    text-decoration: underline;
+  }
+
+  #projects p {
+    color: var(--accent-color);
+    text-decoration: underline;
+  }
+
+  #reflections {
+    padding: 2rem;
+    text-align: left;
+  }
+
+  #reflections h3 {
+    color: var(--accent-color);
+  }
+  
+  .reflection {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+
+  }
+  .des {
+    font-weight: 250;
+    filter: drop-shadow(3px 3px 3px rgb(94, 94, 94));
+  }
+
+ 
